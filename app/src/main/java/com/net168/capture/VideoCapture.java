@@ -45,6 +45,7 @@ public abstract class VideoCapture {
     abstract public void startPreview();
     abstract public void stopPreview();
     abstract public void setDisplay(PreView view);
+    abstract public int getOrientationAsyn();
 
     public void setPreviewCallback(PreviewCallback callback) {
     }

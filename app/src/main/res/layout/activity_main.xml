@@ -1,37 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
 
-    <Button
-        android:id="@+id/play_with_surfaceview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textAllCaps="false"
-        android:text="SurfaceView渲染"
-        />
+        <Button
+            android:id="@+id/play_with_surfaceview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="SurfaceView渲染"
+            />
 
-    <Button
-        android:id="@+id/play_with_textureview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textAllCaps="false"
-        android:text="TextureView渲染"
-        />
+        <Button
+            android:id="@+id/play_with_textureview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="TextureView渲染"
+            />
 
-    <Button
-        android:id="@+id/play_with_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textAllCaps="false"
-        android:text="静默渲染"
-        />
+        <Button
+            android:id="@+id/play_with_glview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="GLSurfaceView渲染"
+            />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/play_with_opengl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="OpenGL渲染"
+            />
+
+        <Button
+            android:id="@+id/play_with_opengl_jni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="OpenGL jni渲染"
+            />
+
+        <Button
+            android:id="@+id/play_with_fbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:text="FBO渲染"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

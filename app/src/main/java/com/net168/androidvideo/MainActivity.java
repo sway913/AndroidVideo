@@ -31,7 +31,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         findViewById(R.id.play_with_surfaceview).setOnClickListener(this);
         findViewById(R.id.play_with_textureview).setOnClickListener(this);
-        findViewById(R.id.play_with_data).setOnClickListener(this);
+        findViewById(R.id.play_with_opengl).setOnClickListener(this);
+        findViewById(R.id.play_with_glview).setOnClickListener(this);
+        findViewById(R.id.play_with_fbo).setOnClickListener(this);
+        findViewById(R.id.play_with_opengl_jni).setOnClickListener(this);
     }
 
     @Override
@@ -43,8 +46,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.play_with_textureview:
                 TextureViewActivity.gotoActivity(this);
                 break;
-            case R.id.play_with_data:
-                SurfaceTextureActivity.gotoActivity(this);
+            case R.id.play_with_opengl:
+                OpenGLDrawActivity.gotoActivity(this);
+                break;
+            case R.id.play_with_glview:
+                GLSurfaceViewActivity.gotoActivity(this);
+                break;
+            case R.id.play_with_fbo:
+                FboDrawActivity.gotoActivity(this);
+                break;
+            case R.id.play_with_opengl_jni:
+                JniOpenGLDrawActivity.gotoActivity(this);
                 break;
         }
     }

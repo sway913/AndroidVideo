@@ -28,11 +28,6 @@ public class SurfaceViewActivity extends Activity implements SurfaceHolder.Callb
                 .setFront(false)
                 .build();
         mCapture.openCamera();
-        mCapture.setPreviewCallback(new VideoCapture.PreviewCallback() {
-            @Override
-            public void onPreviewFrame(byte[][] data) {
-            }
-        });
     }
 
     @Override

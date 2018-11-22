@@ -163,6 +163,28 @@ public class CameraCapture extends VideoCapture {
             }
         });
     }
+
+
+    @Override
+    public int getOrientationAsyn() {
+        mLock.block();
+        exceute(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+        mLock.open();
+        int degrees;
+        if (mConfig.isFront) {
+            degrees = mInfo.orientation % 360;
+        }
+        else {
+            degrees = (mInfo.orientation + 360) % 360;
+        }
+        return degrees;
+    }
+
     private void setDisplayImpl() {
         try {
             if (mPreView.getOutputClass() == SurfaceHolder.class) {

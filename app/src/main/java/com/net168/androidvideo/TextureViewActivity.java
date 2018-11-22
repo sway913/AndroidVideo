@@ -28,11 +28,6 @@ public class TextureViewActivity extends Activity implements TextureView.Surface
                 .setFront(false)
                 .build();
         mCapture.openCamera();
-        mCapture.setPreviewCallback(new VideoCapture.PreviewCallback() {
-            @Override
-            public void onPreviewFrame(byte[][] data) {
-            }
-        });
     }
 
 

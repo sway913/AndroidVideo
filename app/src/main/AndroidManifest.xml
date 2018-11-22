@@ -20,7 +20,10 @@
         </activity>
         <activity android:name=".SurfaceViewActivity"/>
         <activity android:name=".TextureViewActivity"/>
-        <activity android:name=".SurfaceTextureActivity"/>
+        <activity android:name=".OpenGLDrawActivity"/>
+        <activity android:name=".GLSurfaceViewActivity"/>
+        <activity android:name=".FboDrawActivity"/>
+        <activity android:name=".JniOpenGLDrawActivity"/>
     </application>
 
 </manifest>

@@ -199,6 +199,12 @@ public class Camera2Capture extends VideoCapture {
         }
     }
 
+    //TODO
+    @Override
+    public int getOrientationAsyn() {
+        return 0;
+    }
+
     @Override
     public void releaseCamera() {
         if (mReader != null) {
